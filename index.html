@@ -161,7 +161,7 @@
                                 </li>
                                 <li class="item-social">
                                     <a class="person-link" href="https://twitter.com/home?lang=uk">
-                                        <svg class="icon-socials"">
+                                        <svg class="icon-socials">
                                                                     <use href=" ./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
@@ -200,7 +200,7 @@
                                 </li>
                                 <li class="item-social">
                                     <a class="person-link" href="https://twitter.com/home?lang=uk">
-                                    <svg class="icon-socials"">
+                                    <svg class="icon-socials">
                                         <use href="./images/symbol-defs.svg#icon-twitter"></use>
                                     </svg>
                                     </a>
@@ -278,7 +278,7 @@
                                 </li>
                                 <li class="item-social">
                                     <a class="person-link" href="https://twitter.com/home?lang=uk">
-                                        <svg class="icon-socials"">
+                                        <svg class="icon-socials">
                                                                     <use href=" ./images/symbol-defs.svg#icon-twitter"></use>
                                         </svg>
                                     </a>
@@ -351,6 +351,7 @@
                 </li>
             </ul>
             </div>
+            
         </section>
     </main>
     <footer class="footer-section">
@@ -402,7 +403,7 @@
             <div>
             <h3 class="footer-h">Подпишитесь на рассылку</h3>
             <form autocomplete="off" method="POST">
-                <label for="">
+                <label>
                     <input class="input-footer" name="mail" type="email" placeholder="E-mail" value="" >
                 </label>
                 <button class="button-footer" type="submit">
@@ -427,25 +428,38 @@
         </svg>
         </button>
         <h2 class="modal-h">Оставьте свои данные, мы вам перезвоним</h2>
-        <form action="">
-            <label for="">
-                <input type="text">
-            </label>
-            <label for="">
-                <input type="text">
-            </label>
-            <label for="">
-                <input type="text">
-            </label>
-            <label for="">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </label>
-            <label for="">
-                <input type="checkbox">
-                <p>Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
-            </label>
-            <button type="submit">Отправить</button>
-        </form>
+<form class="form">
+    <div class="div-form">
+        <label class="modal-label" for="name"> <span class="span">Имя</span> </label>
+        <input class="input" type="text" name="name" id="name">
+        <svg class="icon" width="18px" height="18px">
+            <use href="./img/symbol-defs.svg#icon-person-black"></use>
+        </svg>
+    </div>
+    <div class="div-form">
+        <label class="modal-label" for="mail"> <span class="span">Почта</span> </label>
+        <input class="input" type="email" name="mail" id="mail">
+        <svg class="icon" width="18px" height="18px">
+            <use href="./img/symbol-defs.svg#icon-email-black"></use>
+        </svg>
+    </div>
+    <div class="div-form">
+        <label class="modal-label" for="tel"> <span class="span">Телефон</span> </label>
+        <input class="input" type="tel" name="tel" id="tel">
+        <svg class="icon" width="18px" height="18px">
+            <use href="./img/symbol-defs.svg#icon-phone-black"></use>
+        </svg>
+    </div>
+    <div class="div-form">
+        <label class="modal-label" for="comment"> <span class="span">Комментарий</span></label>
+        <textarea class="textarea" name="comment" id="" cols="" rows="5" placeholder="Введите текст"></textarea>
+    </div>
+    <div class="checkbox-flex">
+        <input class="checkbox" type="checkbox" name="agree" id="agree" checked>
+        <label for="agree"><p class="agree-text">Соглашаюсь с рассылкой и принимаю <a class="modal-link" href="">Условия договора</a></p></label>
+    </div>
+    <button class="modal-button" type="submit">Отправить</button>
+</form>
     </div>
     </div>
 
